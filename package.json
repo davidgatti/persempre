@@ -1,0 +1,31 @@
+{
+  "name": "persempre",
+  "version": "1.0.0",
+  "description": "Monitor file changes and restart your NodeJS server inside a Docker container",
+  "main": "./index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidgatti/express-generator-dg"
+  },
+  "bin": {
+    "persempre": "./index.js"
+  },
+  "keywords": [
+    "persempre",
+    "file monitor",
+    "file",
+    "monitoring",
+    "david gatti",
+    "restart",
+    "server restart"
+  ],
+  "author": {
+    "name": "David Gatti",
+    "email": "npm@gatti.pl",
+    "url": "https://github.com/davidgatti"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-dir": "0.1.16"
+  }
+}
