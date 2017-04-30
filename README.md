@@ -1,12 +1,12 @@
 # Persempre
 
-The app name Persempre means Forever in Italian and was create to replace Nodemon in a docker environment.
+The app name Persempre means Forever in Italian and was create to replace [Nodemon](https://www.npmjs.com/package/nodemon) in a docker environment.
 
 # Why you say?
 
-I personally love Docker, and run everything throw it, but the big issue is that Docker won't bobble the events related to a file change if your run a VM machine on your host and run inside the VM a Docker environment while mounting a folder with your code from the originally host environment inside the VM and then mount that folder inside a Docker. As you can see there are lots of nesting.
+I personally love Docker, and run everything through it, but the big issue is that Docker won't bobble the events related to a file change if your run a VM machine on your host, and inside the VM a Docker environment while mounting a folder with your code from the originally host environment inside the VM and then mount that folder inside a Docker container. As you can see there are lots of nesting.
 
-This situation makes it so that an file change event won't reach Docker, and if you use Nodemon you'll need to use the `legacy` mode. Which is nothing more then a infinite `while` loop that constantly goes over each file in your project and thus uses a lot of CPU time. To the point that my VM is sign 110% of the CPU and my MacBook Ari gets very hot.
+This situation makes it so that a file change event won't reach Docker, and if you use [Nodemon](https://www.npmjs.com/package/nodemon) you'll need to use the `legacy` mode. Which is nothing more then a infinite `while` loop that constantly goes over each file in your project and thus uses a lot of CPU time - to the point that my VM is sign a constant 110% of the CPU and my MacBook Ari gets very hot.
 
 # The solution!
 
@@ -18,7 +18,25 @@ My app uses one timer that runs every 4 sec and goes over each file in the proje
 
 # When should this project be used?
 
-Only if you work with a Docker container or if you need to use the legacy mode of Nodemon. If that is the case fell free to use this project instead.
+Only if you work with a Docker container or if you need to use the legacy mode of [Nodemon](https://www.npmjs.com/package/nodemon). If that is the case fell free to use this project instead.
+
+# How to use this package?
+
+Just install this package globally with the following command
+
+```
+$ npm install persempre -g
+```
+Then you can just type:
+
+```
+$ persempre FILE_TO_RUN
+```
+# Is this an ideal solution?
+
+Far from it. But this is the best solution for the problem. Ideally you would want to let the operating system tell you when a file was change, but since a Docker container is unable to provide this information as of now.
+
+Please don't use this module if you run your NodeJS project directly on your machine.
 
 # The End
 
