@@ -145,6 +145,14 @@ else
 
 }
 
+//   _    _ ______ _      _____  ______ _____   _____
+//  | |  | |  ____| |    |  __ \|  ____|  __ \ / ____|
+//  | |__| | |__  | |    | |__) | |__  | |__) | (___
+//  |  __  |  __| | |    |  ___/|  __| |  _  / \___ \
+//  | |  | | |____| |____| |    | |____| | \ \ ____) |
+//  |_|  |_|______|______|_|    |______|_|  \_\_____/
+//
+
 //
 //	The main loop that will keep checking all the files
 //
@@ -172,7 +180,14 @@ function looper(node, files)
 			//
 			if(state)
 			{
+				//
+				//	1.	Kill the node process that we started
+				//
 				process.kill(node.pid);
+
+				//
+				//	2.	Kill this very process so we can restart the server
+				//
 				process.exit();
 			}
 		}
