@@ -5,7 +5,7 @@
   "main": "./index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidgatti/express-generator-dg"
+    "url": "https://github.com/davidgatti/persempre"
   },
   "bin": {
     "persempre": "./index.js"
