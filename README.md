@@ -1,3 +1,10 @@
+[![downloads][downloads-badge]][npm-stat]
+
+[downloads-badge]: https://img.shields.io/npm/dm/persempre.svg?style=flat-square
+[npm-stat]: http://npm-stat.com/charts.html?package=persempre&from=2016-04-01
+
+---
+
 # Persempre
 
 The app name Persempre means Forever in Italian and was create to replace [Nodemon](https://www.npmjs.com/package/nodemon) in a docker environment.
