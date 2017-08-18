@@ -1,3 +1,10 @@
+[![downloads][downloads-badge]][npm-stat]
+
+[downloads-badge]: https://img.shields.io/npm/dm/persempre.svg?style=flat-square
+[npm-stat]: http://npm-stat.com/charts.html?package=persempre&from=2016-04-01
+
+---
+
 # Persempre
 
 The app name Persempre means Forever in Italian and was create to replace [Nodemon](https://www.npmjs.com/package/nodemon) in a docker environment.
@@ -40,7 +47,13 @@ Please don't use this module if you run your NodeJS project directly on your mac
 
 # The End
 
-If you've enjoyed this article/project, please consider giving it a 🌟. Also check out my [GitHub account](https://github.com/davidgatti), where I have other articles and apps that you might find interesting.
+If you've enjoyed this article/project, please consider giving it a 🌟 or donate.
+
+- [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/gattidavid/25)
+- [![Star on GitHub](https://img.shields.io/github/stars/davidgatti/persempre.svg?style=social)](https://github.com/davidgatti/persempre/stargazers)
+- [![Watch on GitHub](https://img.shields.io/github/watchers/davidgatti/persempre.svg?style=social)](https://github.com/davidgatti/persempre/watchers)
+
+Also check out my [GitHub account](https://github.com/davidgatti), where I have other articles and apps that you might find interesting.
 
 ## Where to follow
 
