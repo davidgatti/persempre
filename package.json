@@ -1,7 +1,7 @@
 {
   "name": "persempre",
   "version": "1.0.3",
-  "description": "Monitor file changes and restart your NodeJS server inside a Docker container",
+  "description": "👓 Monitor file changes and restart your NodeJS server inside a Docker container",
   "main": "./index",
   "repository": {
     "type": "git",
