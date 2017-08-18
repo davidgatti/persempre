@@ -1,6 +1,6 @@
 {
   "name": "persempre",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Monitor file changes and restart your NodeJS server inside a Docker container",
   "main": "./index",
   "repository": {
